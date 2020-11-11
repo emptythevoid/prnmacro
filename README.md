@@ -9,3 +9,4 @@ First, make a backup of the existing Normal.dotm.  Then replace it with this one
 
 Once the new template is copied, you can open Word and go to File, Options, Quick Access Toolbar and set it to "choose from Macros." This will add a button at the top-left of the Word window to quickly run the macro.
 
+code.txt has the macro code written out for analysis or for copying manually (if you need to integrate it with existing macros).
