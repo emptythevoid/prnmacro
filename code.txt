@@ -1,0 +1,17 @@
+Sub ereports()
+'
+' ereports Macro
+'
+'
+    Selection.delete Unit:=wdCharacter, Count:=1
+    If Selection.PageSetup.Orientation = wdOrientPortrait Then
+        Selection.PageSetup.Orientation = wdOrientLandscape
+    Else
+        Selection.PageSetup.Orientation = wdOrientPortrait
+    End If
+    Selection.WholeStory
+    Selection.Font.Size = 9
+    Selection.Font.Bold = wdToggle
+    ActiveWindow.ActivePane.View.zoom.Percentage = 100
+    ActiveWindow.ActivePane.View.zoom.PageFit = wdPageFitBestFit
+End Sub
